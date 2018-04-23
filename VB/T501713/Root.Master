@@ -1,0 +1,31 @@
+﻿<%@ Master Language="vb" AutoEventWireup="true" CodeBehind="Root.master.vb" Inherits="T501713.Root" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 100%">
+            <div style="margin:0 auto; width:250px">
+                <dx:ASPxMenu ID="menu" runat="server" Orientation="Horizontal">
+                    <Items>
+                        <dx:MenuItem Text="Init approach" NavigateUrl="WebForm1.aspx"></dx:MenuItem>
+                        <dx:MenuItem Text="Callback approach" NavigateUrl="WebForm2.aspx"></dx:MenuItem>
+                    </Items>
+                </dx:ASPxMenu>
+            </div>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <dx:ASPxPopupControl ID="popupControl" runat="server" ClientInstanceName="popup" OnInit="popupControl_Init" OnWindowCallback="popupControl_WindowCallback"
+                PopupVerticalAlign="WindowCenter" PopupHorizontalAlign="WindowCenter" Width="600" Height="600">
+            </dx:ASPxPopupControl>
+        </div>
+    </form>
+</body>
+</html>
