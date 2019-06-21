@@ -9,6 +9,9 @@
 * [WebForm2.aspx.cs](./CS/T501713/WebForm2.aspx.cs) (VB: [WebForm2.aspx.vb](./VB/T501713/WebForm2.aspx.vb))
 <!-- default file list end -->
 # How to use a single ASPxPopupControl for the entire application
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t501713/)**
+<!-- run online end -->
 
 
 This example demonstrates the approaches shown in the <a href="https://www.devexpress.com/Support/Center/p/T501708">Best practices to use ASPxPopupControl in your application</a> article.
