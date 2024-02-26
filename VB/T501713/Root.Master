@@ -1,4 +1,4 @@
-﻿<%@ Master Language="vb" AutoEventWireup="true" CodeBehind="Root.master.vb" Inherits="T501713.Root" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="T501713.Root" %>
 
 <!DOCTYPE html>
 

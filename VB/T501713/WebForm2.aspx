@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" MasterPageFile="~/Root.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.vb" Inherits="T501713.WebForm2"  %>
+<%@ Page Title="" Language="VB" MasterPageFile="~/Root.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.vb" Inherits="T501713.WebForm2"  %>
 <%@ MasterType TypeName="T501713.Root" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
