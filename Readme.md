@@ -4,15 +4,15 @@
 <!-- default badges end -->
 # Popup Control for ASP.NET Web Forms - How to use one pop-up across all pages
 
-To improve performance, you can use one [Popup Control](https://docs.devexpress.com/AspNet/3582/components/docking-and-popups/popup-control) across all pages of your application. This example demonstrates how to create a popup control on the master page, invoke it from multiple pages, and populate the control with page-specific content.
+You can use one [Popup Control](https://docs.devexpress.com/AspNet/3582/components/docking-and-popups/popup-control) across all pages of your application to improve its performance. This example demonstrates how to create a popup control on the master page, invoke the control from multiple pages, and populate it with page-specific content.
 
 ![Popup Window](popup.png)
 
-The **WebForm1** page populates the popup with content during its initialization. The **WebForm2** page specifies the popup control's content once the control sends a callback to the server. Use **Init approach** and **Callback approach** menu items to switch between these pages. Click the **Show Popup** button to invoke the pop-up window.
+The **WebForm1** page populates the popup control with content during its initialization. The **WebForm2** page specifies the pop-up windows's content once the control sends a callback to the server. Use **Init approach** and **Callback approach** menu items to switch between these pages. Click the **Show Popup** button to invoke the pop-up window.
 
 ## Overview
 
-Place an empty popup control in the root master page to make this control accessible from any content page:
+Place an empty popup control in the root master page to make this control accessible from any page:
 
 ```aspx
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="root.master.cs" Inherits="T501708_1.root" %>
@@ -38,7 +38,7 @@ Place an empty popup control in the root master page to make this control access
 </html>
 ```
 
-Use the name of the popup control's client instance to access this instance from a content page. The code snippet below uses the client-side instance to show the pop-up window:
+Use the popup control's client instance name to access this instance from a page. The code sample below uses the client-side instance to invoke the pop-up window:
 
 ```js
 function button1_Click(s, e) {
@@ -46,7 +46,7 @@ function button1_Click(s, e) {
 }
 ```
 
-Handle the popup control's `Init` or [WindowCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControlBase.WindowCallback) event and populate the control with page-specific content. You can define the popup's content for each page in the master page's event handler or put all the content logic to the corresponding page code. To do the later, follow the steps below:
+Handle the popup control's `Init` or [WindowCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControlBase.WindowCallback) event and populate the control with page-specific content. You can define popup content for each page in the master page or put all the content logic to the corresponding page code. To do the later, follow the steps below:
 
 1. Create an event delegate in the master page:
 
