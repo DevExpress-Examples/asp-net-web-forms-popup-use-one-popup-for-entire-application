@@ -8,7 +8,7 @@ You can use one [Popup Control](https://docs.devexpress.com/AspNet/3582/componen
 
 ![Popup Window](popup.png)
 
-In this example, the **WebForm1** page populates the pop-up window with content during control initialization. The **WebForm2** page specifies the window's content once the control sends a callback to the server. Use **Init approach** and **Callback approach** menu items to switch between these pages. Click the **Show Popup** button to show the pop-up window.
+In this example, the page **WebForm1** populates the pop-up window with content during control initialization. The page **WebForm2** specifies the window's content once the control sends a callback to the server. Use menu items **Init approach** and **Callback approach** to switch between these pages. Click the **Show Popup** button to show the pop-up window.
 
 ## Overview
 
@@ -16,19 +16,19 @@ Follow the steps below to use one pop-up across multiple pages:
 
 1. Place an empty popup control in the root master page.
 
-2. Handle one of the following events:
+2. Select the event that will generate pop-up window content:
 
     * The `Init` event allows you to create pop-up window content at runtime during popup control initialization.
     * The [WindowCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControlBase.WindowCallback) event allows you to dynamically create pop-up window content once the window sends a callback.
 
-    The code snippet below handles the `Init` event:
+    The code snippet below assigns a handler to the `Init` event:
 
     ```aspx
     <dx:ASPxPopupControl ID="popupControl" runat="server" ClientInstanceName="popup" 
         OnInit="popupControl_Init" />
     ```
 
-3. Create a delegate for the event you handled on the previous step:
+3. Create a delegate for the event you selected in the previous step:
 
     ```cs
     public event EventHandler PopupInit;
