@@ -84,7 +84,7 @@ Follow the steps below to use one pop-up across multiple pages:
 - [How to customize a pop-up window's content and layout](https://github.com/DevExpress-Examples/asp-net-web-forms-popup-customize-content-and-layout)
 - [How to create ASP.NET Web Forms controls dynamically](https://github.com/DevExpress-Examples/asp-net-web-forms-create-controls-dynamically)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-popup-use-one-popup-for-entire-application&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-popup-use-one-popup-for-entire-application&~~~was_helpful=no)
 
